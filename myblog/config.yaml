@@ -25,12 +25,11 @@ menu:
     - name: Tags
       url: "tags/"
       weight: 4
-    - name: Subscribe
-      url: "index.xml"
+
 
 params:
   description: "A website built through Hugo and blogdown."
-  footer: "&copy; [Fudong Wang](https://yihui.org) 2022 -- {Year} | [Github](https://github.com/solitongas) "
+  footer: "&copy; [Fudong Wang](https://solitongas.github.io) 2022 -- {Year} | [Github](https://github.com/solitongas) "
 
 markup:
   highlight:
