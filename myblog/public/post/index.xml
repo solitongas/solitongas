@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Integral equations of the first kind</title>
-      <link>/2022/02/08/integral-equations-of-the-first-kind/</link>
+      <title>Fredholm integral equations of the first kind</title>
+      <link>/post/2022/02/08/fredholm-integral-equations-of-the-first-kind/</link>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/2022/02/08/integral-equations-of-the-first-kind/</guid>
+      <guid>/post/2022/02/08/fredholm-integral-equations-of-the-first-kind/</guid>
       <description>Integral equations play important role in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows: $$\int_\Gamma g(z,w)u(w)|dw|+\sigma(z)u(z)=\phi(z),\quad z\in \Gamma,$$ where $\Gamma$ is some simple smooth rectifiable curve in $\mathbb{C}^+$. The case when $\sigma\equiv 0$ is referred to as soliton condensate. As one can immediately see, the equation becomes Fredholm equation of the first kind.</description>
     </item>
     
