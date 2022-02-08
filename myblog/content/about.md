@@ -3,4 +3,4 @@ date: "2016-05-05T21:48:51-07:00"
 title: About
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+Hi, my dear friend (yes, it's you!), welcome to my blog. This is your truly, Fudong Wang, currently work as a postdoc at UCF. My research interests include classical soliton theory ( inverse scattering, long-time asymptotics) and (currently) spectral theory of soliton/breather gases. Besides integrable system, I am also interested in complex analysis related problem, such as classic potential theory, free boundary problem and uniform algebra. 
