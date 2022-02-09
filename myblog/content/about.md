@@ -7,7 +7,7 @@ Hi, my dear friend (yes, it’s you!), welcome to my blog. This is your truly, F
 
 ---
 
-![That is supposed to be me!](https://solitongas.github.io/images/logo.png)
+![That is supposed to be me!](https://solitongas.github.io/images/me.jpg)
 
 --- 
 
