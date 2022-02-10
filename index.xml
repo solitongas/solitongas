@@ -113,7 +113,7 @@ The variance of the distribution is $\sigma^{2}$.
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</guid>
       <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
-&lt;p&gt;Integral equations play important role in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
+&lt;p&gt;Integral equations play important roles in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
 $$\int_\Gamma g(z,w)u(w)|dw|+\sigma(z)u(z)=\phi(z),\quad z\in \Gamma$$&lt;/p&gt;
 &lt;p&gt;where $\Gamma$ is some simple smooth rectifiable curve in $\mathbb{C}^+$ and kernel $g(z,w)=\log\left|\frac{z-\bar w}{z-w}\right|$ is so-called Green kernel (i.e. it is the Green function to the Direchlet problem on the upper half plane.). The case when $\sigma\equiv 0$ is referred to as soliton condensate. As one can immediately see, the equation becomes Fredholm equation of the first kind. It is well-known that integral equation of the first kind is (in general) ill-posed in the sense of Hadamard. Here we are going to consider a slightly different equation:
 $$\int_{\Gamma}\log|w-z|^{-1} u(w)|dw|=f(z),\quad z\in \Gamma.$$&lt;/p&gt;

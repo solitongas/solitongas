@@ -17,7 +17,7 @@ projects: []
 ---
 
 # Background
-Integral equations play important role in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
+Integral equations play important roles in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
 $$\int_\Gamma g(z,w)u(w)|dw|+\sigma(z)u(z)=\phi(z),\quad z\in \Gamma$$
 
 where $\Gamma$ is some simple smooth rectifiable curve in $\mathbb{C}^+$ and kernel $g(z,w)=\log\left|\frac{z-\bar w}{z-w}\right|$ is so-called Green kernel (i.e. it is the Green function to the Direchlet problem on the upper half plane.). The case when $\sigma\equiv 0$ is referred to as soliton condensate. As one can immediately see, the equation becomes Fredholm equation of the first kind. It is well-known that integral equation of the first kind is (in general) ill-posed in the sense of Hadamard. Here we are going to consider a slightly different equation:
