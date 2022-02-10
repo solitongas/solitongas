@@ -5,21 +5,29 @@
     <link>https://solitongas.github.io/author/fudong-wang/</link>
       <atom:link href="https://solitongas.github.io/author/fudong-wang/index.xml" rel="self" type="application/rss+xml" />
     <description>Fudong Wang</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Fri, 15 Oct 2021 14:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://solitongas.github.io/author/fudong-wang/avatar_hu297a95b7592623fcaf3aa2d4b30554c4_3673742_270x270_fill_q75_lanczos_center.JPG</url>
+      <url>https://solitongas.github.io/author/fudong-wang/avatar_hu292516b559da595fc7b6e9cf647bca2c_1099407_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Fudong Wang</title>
       <link>https://solitongas.github.io/author/fudong-wang/</link>
     </image>
     
     <item>
-      <title>Integral equation of the first kind</title>
-      <link>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</link>
-      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</guid>
-      <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
-&lt;p&gt;Integral equations play important roles in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
-$$\int_\Gamma g(z,w)u(w)|dw|+\sigma(z)u(z)=\phi(z),\quad z\in \Gamma$$&lt;/p&gt;
+      <title>The Continuum Limit of Theta Functions</title>
+      <link>https://solitongas.github.io/talk/the-continuum-limit-of-theta-functions/</link>
+      <pubDate>Fri, 15 Oct 2021 14:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/talk/the-continuum-limit-of-theta-functions/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/x75sjMwHzdw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>
+amma$$&lt;/p&gt;
 &lt;p&gt;where $\Gamma$ is some simple smooth rectifiable curve in $\mathbb{C}^+$ and kernel $g(z,w)=\log\left|\frac{z-\bar w}{z-w}\right|$ is so-called Green kernel (i.e. it is the Green function to the Direchlet problem on the upper half plane.). The case when $\sigma\equiv 0$ is referred to as soliton condensate. As one can immediately see, the equation becomes Fredholm equation of the first kind. It is well-known that integral equation of the first kind is (in general) ill-posed in the sense of Hadamard. Here we are going to consider a slightly different equation:
 $$\int_{\Gamma}\log|w-z|^{-1} u(w)|dw|=f(z),\quad z\in \Gamma.$$&lt;/p&gt;
 &lt;p&gt;And we will consider the uniqueness of the equation using classical potential theory. Then we will use a method introduced by Yan&amp;amp;Sloan to solve the equation explicitly.&lt;/p&gt;
