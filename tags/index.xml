@@ -1,38 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Soliton Gases</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Soliton Gases</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 08 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>fredholm</title>
-      <link>/tags/fredholm/</link>
-      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/fredholm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>soliton condensate</title>
-      <link>/tags/soliton-condensate/</link>
-      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/soliton-condensate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>soliton gas</title>
-      <link>/tags/soliton-gas/</link>
-      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/soliton-gas/</guid>
-      <description></description>
-    </item>
+    <title>Tags | Soliton Gases</title>
+    <link>https://solitongas.github.io/tags/</link>
+      <atom:link href="https://solitongas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://solitongas.github.io/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Tags</title>
+      <link>https://solitongas.github.io/tags/</link>
+    </image>
     
   </channel>
 </rss>
