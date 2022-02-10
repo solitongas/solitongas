@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>complex analysis | Soliton Gases</title>
+    <link>https://solitongas.github.io/category/complex-analysis/</link>
+      <atom:link href="https://solitongas.github.io/category/complex-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>complex analysis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_512x512_fill_lanczos_center_3.png</url>
+      <title>complex analysis</title>
+      <link>https://solitongas.github.io/category/complex-analysis/</link>
+    </image>
+    
+    <item>
+      <title>Integral equation of the first kind</title>
+      <link>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</guid>
+      <description>&lt;h1 id=&#34;background&#34;&gt;Background&lt;/h1&gt;
+&lt;p&gt;Integral equations play important roles in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
+$$\int_\Gamma g(z,w)u(w)|dw|+\sigma(z)u(z)=\phi(z),\quad z\in \Gamma$$&lt;/p&gt;
+&lt;p&gt;where $\Gamma$ is some simple smooth rectifiable curve in $\mathbb{C}^+$ and kernel $g(z,w)=\log\left|\frac{z-\bar w}{z-w}\right|$ is so-called Green kernel (i.e. it is the Green function to the Direchlet problem on the upper half plane.). The case when $\sigma\equiv 0$ is referred to as soliton condensate. As one can immediately see, the equation becomes Fredholm equation of the first kind. It is well-known that integral equation of the first kind is (in general) ill-posed in the sense of Hadamard. Here we are going to consider a slightly different equation:
+$$\int_{\Gamma}\log|w-z|^{-1} u(w)|dw|=f(z),\quad z\in \Gamma.$$&lt;/p&gt;
+&lt;p&gt;And we will consider the uniqueness of the equation using classical potential theory. Then we will use a method introduced by Yan&amp;amp;Sloan to solve the equation explicitly.&lt;/p&gt;
+&lt;h1 id=&#34;potential-theory-and-uniqueness&#34;&gt;Potential theory and uniqueness&lt;/h1&gt;
+&lt;p&gt;Let&amp;rsquo;s first introduce some definitions from classical complex analysis. All the definitions and theorems can be found on Hille&amp;rsquo;s book.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 1.&lt;/strong&gt;  Let $\mu$ be a probability measure supported in $\Gamma$ (i.e. $\mu(\Gamma)=1$.), the &lt;strong&gt;logarithmic potential&lt;/strong&gt; is
+$$U^{\mu}(z)=-\int_\Gamma \log\left|z-w\right|d\mu(w),\quad z\in \mathbb{C}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 2.&lt;/strong&gt; The &lt;strong&gt;energy&lt;/strong&gt; is defined as
+$$I(\mu)=\int U^{\mu}(z) d\mu(z).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 3.&lt;/strong&gt; The &lt;strong&gt;capacity&lt;/strong&gt; of a compact set $\Gamma$ is defined as
+$$C_\Gamma=e^{-V_\Gamma}=\exp{(-\inf_{\mu\in M(\Gamma)}I(\mu))},$$ where $V_\Gamma$ is so-called &lt;strong&gt;Robin constant&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 4.&lt;/strong&gt; A &lt;strong&gt;charge&lt;/strong&gt; is a signed measure, which always has the decomposition as $\sigma=\sigma_+-\sigma_-$, where $\sigma_\pm$ are called positive and negative part of the charge. And we denote the space of charge with finite energy as $S(\Gamma)$.&lt;/p&gt;
+&lt;p&gt;\begin{equation}
+hhh
+\end{equation}&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
