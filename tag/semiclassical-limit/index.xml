@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>theta function | Soliton Gases</title>
-    <link>https://solitongas.github.io/tag/theta-function/</link>
-      <atom:link href="https://solitongas.github.io/tag/theta-function/index.xml" rel="self" type="application/rss+xml" />
-    <description>theta function</description>
+    <title>semiclassical limit | Soliton Gases</title>
+    <link>https://solitongas.github.io/tag/semiclassical-limit/</link>
+      <atom:link href="https://solitongas.github.io/tag/semiclassical-limit/index.xml" rel="self" type="application/rss+xml" />
+    <description>semiclassical limit</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_512x512_fill_lanczos_center_3.png</url>
-      <title>theta function</title>
-      <link>https://solitongas.github.io/tag/theta-function/</link>
+      <title>semiclassical limit</title>
+      <link>https://solitongas.github.io/tag/semiclassical-limit/</link>
     </image>
     
     <item>
@@ -135,19 +135,6 @@ T(\phi f)(\eta)=\frac{1}{\pi}\int_{0}^1\log{\left|\frac{\eta-\bar\mu}{\eta-\mu}\
 How to construct a explicit solution to the variational equation?&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;as-for-the-answer-we-are-still-working-on-that&#34;&gt;As for the answer, we are still working on that.&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Continuum Limit of Theta Functions</title>
-      <link>https://solitongas.github.io/talk/the-continuum-limit-of-theta-functions/</link>
-      <pubDate>Fri, 15 Oct 2021 14:00:00 +0000</pubDate>
-      <guid>https://solitongas.github.io/talk/the-continuum-limit-of-theta-functions/</guid>
-      <description>
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/x75sjMwHzdw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
 </description>
     </item>
     
