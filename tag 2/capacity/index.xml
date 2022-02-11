@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>capacity | Soliton Gases</title>
+    <link>https://solitongas.github.io/tag/capacity/</link>
+      <atom:link href="https://solitongas.github.io/tag/capacity/index.xml" rel="self" type="application/rss+xml" />
+    <description>capacity</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_512x512_fill_lanczos_center_3.png</url>
+      <title>capacity</title>
+      <link>https://solitongas.github.io/tag/capacity/</link>
+    </image>
+    
+    <item>
+      <title>Integral equation of the first kind</title>
+      <link>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/post/integral-equation-of-the-first-kind/</guid>
+      <description>&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;Integral equations play important roles in mathematical physics. In this short note, we are going to discuss a class of integral equation of the first kind. My motivation to study those equations is from soliton gas, where the nonlinear dispersion relation is as follows:
+$$\int_\Gamma g(z,w)u(w)|dw|+\sigma(z)u(z)=\phi(z),\quad z\in \Gamma$$&lt;/p&gt;
+&lt;p&gt;where $\Gamma$ is some simple smooth rectifiable curve in $\mathbb{C}^+$ and kernel $g(z,w)=\log\left|\frac{z-\bar w}{z-w}\right|$ is so-called Green kernel (i.e. it is the Green function to the Direchlet problem on the upper half plane.). The case when $\sigma\equiv 0$ is referred to as soliton condensate. As one can immediately see, the equation becomes Fredholm equation of the first kind. It is well-known that integral equation of the first kind is (in general) ill-posed in the sense of Hadamard. Here we are going to consider a slightly different equation:
+$$\int_{\Gamma}\log|w-z|^{-1} u(w)|dw|=f(z),\quad z\in \Gamma.$$&lt;/p&gt;
+&lt;p&gt;And we will consider the uniqueness of the equation using classical potential theory. Then we will use a method introduced by Yan&amp;amp;Sloan to solve the equation explicitly.&lt;/p&gt;
+&lt;h3 id=&#34;potential-theory-and-uniqueness&#34;&gt;Potential theory and uniqueness&lt;/h3&gt;
+&lt;p&gt;Let&amp;rsquo;s first introduce some definitions from classical complex analysis. All the definitions and theorems can be found on Hille&amp;rsquo;s book.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 1.&lt;/strong&gt;  Let $\mu$ be a probability measure supported in $\Gamma$ (i.e. $\mu(\Gamma)=1$.), the &lt;strong&gt;logarithmic potential&lt;/strong&gt; is
+$$U^{\mu}(z)=-\int_\Gamma \log\left|z-w\right|d\mu(w),\quad z\in \mathbb{C}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 2.&lt;/strong&gt; The &lt;strong&gt;energy&lt;/strong&gt; is defined as
+$$I(\mu)=\int U^{\mu}(z) d\mu(z).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 3.&lt;/strong&gt; The &lt;strong&gt;capacity&lt;/strong&gt; of a compact set $\Gamma$ is defined as
+$$C_\Gamma=e^{-V_\Gamma}=\exp{(-\inf_{\mu\in M(\Gamma)}I(\mu))},$$ where $V_\Gamma$ is so-called &lt;strong&gt;Robin constant&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Definition 4.&lt;/strong&gt; A &lt;strong&gt;charge&lt;/strong&gt; is a signed measure, which always has the decomposition as $\sigma=\sigma_+-\sigma_-$, where $\sigma_\pm$ are called positive and negative part of the charge. And we denote the space of charge with finite energy as $S(\Gamma)$.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s list some classical results from Hille&amp;rsquo;s book.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma 1.&lt;/strong&gt; Let $\Gamma$ be a compact set with positive capacity, ans $S\subset\Gamma$ has zero capacity. If $\mu\in M(\Gamma)$ and $I(\mu)&amp;lt;\infty$, then $\mu(S)=0$. The same statement if also true for charges (&lt;strong&gt;exercise&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma 2.&lt;/strong&gt; If $C_\Gamma&amp;gt;0$, then there is a unique measure $\mu_e$ such that $I(\mu_e)=\inf_{\mu\in M(\Gamma)}I(\mu)$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma 3.&lt;/strong&gt; Let $\Gamma$ be a compact set with positive capacity. Then $U^{\mu_e}(z)\leq V_\Gamma,\quad z\in \mathbb{C}$ and $U^{\mu_e}(z)= V_\Gamma,\quad z\in \Gamma, q.e.$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma 4.&lt;/strong&gt; Let $\sigma\in S(\Gamma)$ and $\sigma(\Gamma)=0$. Then $I(\sigma)\geq 0$ and &amp;ldquo;$=$&amp;rdquo; iff $\sigma\equiv 0$.&lt;/p&gt;
+&lt;p&gt;Based on the lemmas we mentioned above, we can easily prove the following theorem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theorem 1.&lt;/strong&gt; Let $\Gamma$ be compact and $\sigma\in S(\Gamma)$ generates constant potential, i.e. $U^{\sigma}(z)=c,z\in \Gamma$, q.e., then $c=\sigma(\Gamma)V_\Gamma$ and $\sigma=\sigma(\Gamma)\mu_e$.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;proof.&lt;/em&gt;
+Write \red{$\sigma=\sigma(\Gamma)\mu_e+\sigma_0$}, then $\sigma_0(\Gamma)=0$ and it belongs to $S(\Gamma)$. Thus for each $z\in \Gamma$, we have
+$$
+U^{\sigma_0}(z)=c-\sigma(\Gamma)V_\Gamma, q.e.
+$$
+Then
+$$
+I(\sigma_0)=(c-\sigma(\Gamma)V_\Gamma)\sigma_0(\Gamma)=0.
+$$
+By lemma 4, $\sigma_0\equiv 0$, and the result follows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Corollary 1.&lt;/strong&gt; Suppose $\Gamma$ is compact with $C_\Gamma\neq 1$, if $\sigma\in S(\Gamma)$ is such that $U^\sigma(z)=0,z\in \Gamma, q.e.$, then $\sigma\equiv 0$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theorem 2.(Uniqueness)&lt;/strong&gt;  Let $\Gamma$ be a piecewise smooth with finite length and $C_\Gamma\neq 1$, assume $g\in L_p(\Gamma)$ with $p&amp;gt;1$ such that
+\begin{align*}
+-\int_\Gamma \log|z-w| g(w)|dw|=0,\quad \forall z\in \Gamma,
+\end{align*}
+then $g\equiv 0$.&lt;/p&gt;
+&lt;h3 id=&#34;solution-methods&#34;&gt;Solution Methods&lt;/h3&gt;
+&lt;p&gt;We are now in the position to construct the solution. The method is due to Yan-Sloan, see reference[3] for more details. The existence will follow as we find a way to construct it. First, let&amp;rsquo;s recall some notations for Sobolev spaces.&lt;/p&gt;
+&lt;p&gt;Let $C^\infty_e$ denote the set of even smooth $2\pi$ periodic functions on $\mathbb{R}$.
+For each $v\in C_e^\infty$, we have
+\begin{align*}
+v(s)=\sqrt{\frac{2}{\pi}}\left(\sum_{m\in\mathbb Z_+}\hat v(m)\cos{ms}+\frac{1}{2}\hat v(0)\right),
+\end{align*}
+with
+$
+\hat v(m)=\sqrt{\frac{2}{\pi}}\int_0^\pi v(s)\cos{(ms)}ds, m=0,1,2,\cdots.
+$
+Define the weighted norm in terms of the Fourier series:
+\begin{align*}
+|v|^2_t=2\sum_{m\in \mathbb{Z}_+} m^{2t}|\hat v(m)|^2+|\hat v(0)|^2.
+\end{align*}
+&lt;strong&gt;Definition&lt;/strong&gt; [Weighted Sobolev space]
+$$H_e^t(2\pi) = \text{Closure}\{C_e^\infty(2\pi),|\cdot|_t\}.$$&lt;/p&gt;
+&lt;p&gt;To connect it to our equation, we recall the following well-know indenty:
+For any $v\in H^0(2\pi)$, we have
+\begin{align*}
+-\frac{1}{\pi}\int_{-\pi}^\pi\log\left|2e^{-1/2}\sin\frac{t-\tau}{2}\right|v(\tau)d\tau=\frac{1}{\sqrt{2\pi}}\left(\sum_{|m|&amp;gt;0}\frac{\hat v(m)}{|m|}e^{imt}+\hat v(0)\right):=Av(t).
+\end{align*}&lt;/p&gt;
+&lt;p&gt;The operator $A$ defined above has very good properties. In fact,
+$A$ is an unitary operator from $H^t$ to $H^{t+1}$ for any $t\in \mathbb R$.
+Moreover,  When $t&amp;gt;0$, we have
+\begin{align}
+A^{-1}v=-D^2Av+Jv=-DADv+Jv=-HDv+Jv,\quad v\in H^{t+1},\nonumber
+\end{align}
+where $Jv=(1/\sqrt{2\pi})\hat v(0)$, $Dv(t)=v&#39;(t)$, and $H$ is the Hilbert transform:
+\begin{align*}
+Hv(t)=-\frac{1}{2\pi} p.v.\int_{-\pi} ^\pi \cot{\frac{t-\tau}{2}}v(\tau)d\tau.
+\end{align*}&lt;/p&gt;
+&lt;h3 id=&#34;existence-for-simple-smooth-closed-curves&#34;&gt;Existence for simple smooth closed curves&lt;/h3&gt;
+&lt;p&gt;Consider a closed smooth simple curve $\Gamma$. Then there is a function $v$ from $C^{\infty}(2\pi)$ such that $v: [-\pi, \pi]\rightarrow \Gamma$ and $v&#39;\neq 0$. Then the integral equation of the first kind can be transferred to
+$$Kw(t):=-\frac{1}{\pi}\int_{-\pi}^{\pi}\log|v(t)-v(\tau)|w(\tau)d\tau=f(t),\quad t\in [-\pi, \pi],$$
+where $w(\tau)=u(v(\tau))|v&#39;(\tau)|$ and $f(t)=\phi(v(t))$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theorem&lt;/strong&gt;
+If $\Gamma$ is smooth closed and simple with $C_\Gamma\neq 1$, then
+$K:H^t\rightarrow H^{t+1}$ is bijective.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Proof.&lt;/em&gt;
+Write $K=A+B$, where the kernel of $B$ is $-\frac{1}{\pi}\log\left|e^{1/2}\frac{v(t)-v(\tau)}{2\sin(\frac{t-\tau}{2})}\right|$, which is smooth! This implies $B$ is compact. Then note $K=A(I+A^{-1}B)$, and that $A$ is unitary, apply standard Fredholm theory, the result follows.&lt;/p&gt;
+&lt;h3 id=&#34;an-examples-from-el-tovbis-simple-open-arc-case&#34;&gt;An Examples from El-Tovbis: simple open arc case&lt;/h3&gt;
+&lt;p&gt;Let $\Gamma=[-iq,iq],q&amp;gt;0$, the integral equation is
+\begin{align*}
+-\frac{1}{\pi}\int_\Gamma\log|z-w|u(w)|dw|=\Im z,z\in \Gamma.
+\end{align*}
+Apply Yan-Sloan&amp;rsquo;s method, set $v(x)=-iqx,a(t)=v(cos(t)),t\in [0,\pi].$ The equation becomes
+\begin{align*}
+-\frac{1}{\pi}\int_0^\pi\log|\cos(t)-\cos(\tau)|g(\tau)d\tau=f(t),
+\end{align*}
+with $g(t)=u(-iq\cos(t))\sin(t)$ and $f(t)=-\cos(t)+\frac{\log q}{\sqrt{2\pi}}\hat g(0)$.&lt;/p&gt;
+&lt;p&gt;The using one of the two identities, we have
+\begin{align*}
+\begin{cases}
+\hat q(0)\log (q/2)=0\
+\sqrt{\frac{2}{\pi}}\hat g(1)=-1\
+\hat g(m)=0,m&amp;gt;1.
+\end{cases}
+\end{align*}
+This implies $g(t)=-\cos t+c$, where $c=\begin{cases} 0,q\neq 2\\ \in i\mathbb R , q=2.\end{cases}$. Since when $q=2$, $C_\Gamma=1$! Then we have
+\begin{align*}
+u(z)= (-iz+ic)/\sqrt{q^2+z^2}.
+\end{align*}
+In El-Tovbis, they assume $u$ is anti-Schwarz sysmmetrix, then $c$ must be 0.&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;G.A. El and A. Tovbis,
+Spectral theory of soliton and breather gases
+for the focusing nonlinear Schr&amp;quot;odinger equation,
+Phys. Rev. E 101, 052207 (2020).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A. Kuijlaars and A. Tovbis,
+On minimal energy solutions to certain classes of integral equations related to soliton gases for integrable systems,
+Nonlinearity, 34, n. 10,  7227 (2021)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Yan, Y., and Sloan, I. H.  On integral equations of the first kind with logarithmic kernels. &lt;em&gt;The Journal of Integral Equations and Applications&lt;/em&gt;, 549-579.(1988)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Einar Hille, Analytic function theory, Vol II, AMS Chelsea Publishing, 2nd edition, (2005)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
