@@ -395,7 +395,7 @@
   
   "publisher": {
     "@type": "Organization",
-    "name": "Soliton Gases",
+    "name": "Fudong",
     "logo": {
       "@type": "ImageObject",
       "url": "https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_192x192_fill_lanczos_center_3.png"
@@ -854,7 +854,7 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 379px;">
   <div style="position: relative">
-    <img src="/post/a-note-on-d-bar-inverse-scattering/featured_hu57b7b2e0e82824909af637f7d15b42a6_2630848_720x2500_fit_q75_h2_lanczos.webp" width="720" height="379" alt="" class="featured-image">
+    <img src="/post/a-note-on-d-bar-inverse-scattering/featured_hu57b7b2e0e82824909af637f7d15b42a6_2630848_720x2500_fit_q100_h2_lanczos.webp" width="720" height="379" alt="" class="featured-image">
     
   </div>
 </div>
@@ -868,7 +868,7 @@
 <p>In what follows, we simply copy the main results from <a href="https://sci-hub.se/https://www.sciencedirect.com/science/article/abs/pii/0167278986901843?via%3Dihub" target="_blank" rel="noopener"><strong>Beals-Coifman-1986</strong></a>.</p>
 <p>Let&rsquo;s consider a linear spectral problem:
 \begin{align}
-D_zm(z,x)\equiv (\partial_x+z\hat J)m=q(x)m,
+D_zm(z,x)\equiv (\partial_x+z\hat J)m=q(x)m,\label{spectral}
 \end{align}
 where $\hat J=[J,\cdot]$, $z$ is a spectral variable, $q(x)$ is an off-diagonal matrix with complex-valued function entries defined on whole real line[<strong>Q1: How to generalize it to periodic case?</strong>], and $m$ is a matrix-valued function. In what follows, we also assume $q(x)$ vanishes as $x\rightarrow\infty$.</p>
 <p>Now let&rsquo;s introduce so-called $\bar\partial$ operator. Given any function $f(z)\in C^1(z,\bar z)$, we have
@@ -878,14 +878,14 @@ $$
 where, if $z=x+iy$, then
 \begin{align}
 \partial \equiv \frac{\partial}{\partial  z}=\frac{1}{2}(\partial_x-i\partial_y)  ,\\
-\bar\partial \equiv \frac{\partial}{\partial \bar z}=\frac{1}{2}(\partial_x+i\partial_y).
+\bar\partial \equiv \frac{\partial}{\partial \bar z}=\frac{1}{2}(\partial_x+i\partial_y). \label{ss}
 \end{align}</p>
-<p>Moreover, the dbar derivative makes sense for distributions too. From the Cauchy-Riemann equations, it is evident that dbar annihilate all holomorphic functions. Apply Green&rsquo;s formula, one can easily show that $\frac{1}{\pi z}$ is a fundamental solution for $\bar \partial$. We also have that if $f$ is holomorphic off some &ldquo;nice&rdquo; simple oritented curve $\Sigma$, and the left/right boundary valued $f_\pm$ exist, then
+<p>Moreover, the dbar derivative \eqref{ss} makes sense for distributions too. From the Cauchy-Riemann equations, it is evident that dbar annihilate all holomorphic functions. Apply Green&rsquo;s formula, one can easily show that $\frac{1}{\pi z}$ is a fundamental solution for $\bar \partial$. We also have that if $f$ is holomorphic off some &ldquo;nice&rdquo; simple oritented curve $\Sigma$, and the left/right boundary valued $f_\pm$ exist, then
 $$
-\bar\partial f=\frac{i}{2}(f_+-f_).
+\bar\partial f=\frac{i}{2}(f_+-f_-).
 $$</p>
 <p><strong>Exercise:</strong> Prove all the mentioned properties about dbar operator in the sense of distribution.</p>
-<p>Back to the linear spectral problem, since $D_z$ is holomorphic with respect to $z$, $[D_z,\bar\partial]=0$. Thus, we have
+<p>Back to the linear spectral problem, since $D_z$ is holomorphic with respect to $z$, $[D_z,\bar\partial]=0$. Thus, applying dbar derivative to \eqref{spectral}, we have
 $$
 D_z\bar\partial m=q\bar\partial m.
 $$</p>
@@ -1058,7 +1058,7 @@ where $T(k)$ is a compactly supported distribution, so-called dressing function 
   <div class="media author-card content-widget-hr">
     
       
-      <a href="/author/fudong-wang/"><img class="avatar mr-3 avatar-circle" src="/author/fudong-wang/avatar_hu297a95b7592623fcaf3aa2d4b30554c4_3673742_270x270_fill_q75_lanczos_center.JPG" alt="Fudong Wang"></a>
+      <a href="/author/fudong-wang/"><img class="avatar mr-3 avatar-circle" src="/author/fudong-wang/avatar_hu297a95b7592623fcaf3aa2d4b30554c4_3673742_270x270_fill_q100_lanczos_center.JPG" alt="Fudong Wang"></a>
     
 
     <div class="media-body">
@@ -1202,10 +1202,13 @@ where $T(k)$ is a compactly supported distribution, so-called dressing function 
       
       
       
+        
+        
       
       
       
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+      
+      Published with <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1351,8 +1354,6 @@ where $T(k)$ is a compactly supported distribution, so-called dressing function 
     <script src="/en/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js"></script>
 
     
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-
 
  <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 

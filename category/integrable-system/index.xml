@@ -21,7 +21,7 @@
 &lt;p&gt;In what follows, we simply copy the main results from &lt;a href=&#34;https://sci-hub.se/https://www.sciencedirect.com/science/article/abs/pii/0167278986901843?via%3Dihub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Beals-Coifman-1986&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s consider a linear spectral problem:
 \begin{align}
-D_zm(z,x)\equiv (\partial_x+z\hat J)m=q(x)m,
+D_zm(z,x)\equiv (\partial_x+z\hat J)m=q(x)m,\label{spectral}
 \end{align}
 where $\hat J=[J,\cdot]$, $z$ is a spectral variable, $q(x)$ is an off-diagonal matrix with complex-valued function entries defined on whole real line[&lt;strong&gt;Q1: How to generalize it to periodic case?&lt;/strong&gt;], and $m$ is a matrix-valued function. In what follows, we also assume $q(x)$ vanishes as $x\rightarrow\infty$.&lt;/p&gt;
 &lt;p&gt;Now let&amp;rsquo;s introduce so-called $\bar\partial$ operator. Given any function $f(z)\in C^1(z,\bar z)$, we have
@@ -31,14 +31,14 @@ $$
 where, if $z=x+iy$, then
 \begin{align}
 \partial \equiv \frac{\partial}{\partial  z}=\frac{1}{2}(\partial_x-i\partial_y)  ,\\
-\bar\partial \equiv \frac{\partial}{\partial \bar z}=\frac{1}{2}(\partial_x+i\partial_y).
+\bar\partial \equiv \frac{\partial}{\partial \bar z}=\frac{1}{2}(\partial_x+i\partial_y). \label{ss}
 \end{align}&lt;/p&gt;
-&lt;p&gt;Moreover, the dbar derivative makes sense for distributions too. From the Cauchy-Riemann equations, it is evident that dbar annihilate all holomorphic functions. Apply Green&amp;rsquo;s formula, one can easily show that $\frac{1}{\pi z}$ is a fundamental solution for $\bar \partial$. We also have that if $f$ is holomorphic off some &amp;ldquo;nice&amp;rdquo; simple oritented curve $\Sigma$, and the left/right boundary valued $f_\pm$ exist, then
+&lt;p&gt;Moreover, the dbar derivative \eqref{ss} makes sense for distributions too. From the Cauchy-Riemann equations, it is evident that dbar annihilate all holomorphic functions. Apply Green&amp;rsquo;s formula, one can easily show that $\frac{1}{\pi z}$ is a fundamental solution for $\bar \partial$. We also have that if $f$ is holomorphic off some &amp;ldquo;nice&amp;rdquo; simple oritented curve $\Sigma$, and the left/right boundary valued $f_\pm$ exist, then
 $$
-\bar\partial f=\frac{i}{2}(f_+-f_).
+\bar\partial f=\frac{i}{2}(f_+-f_-).
 $$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Exercise:&lt;/strong&gt; Prove all the mentioned properties about dbar operator in the sense of distribution.&lt;/p&gt;
-&lt;p&gt;Back to the linear spectral problem, since $D_z$ is holomorphic with respect to $z$, $[D_z,\bar\partial]=0$. Thus, we have
+&lt;p&gt;Back to the linear spectral problem, since $D_z$ is holomorphic with respect to $z$, $[D_z,\bar\partial]=0$. Thus, applying dbar derivative to \eqref{spectral}, we have
 $$
 D_z\bar\partial m=q\bar\partial m.
 $$&lt;/p&gt;
