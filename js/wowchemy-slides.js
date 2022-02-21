@@ -1,6 +1,6 @@
 (() => {
   // ns-params:@params
-  var slides = { highlight_style: "dracula", theme: "black" };
+  var slides = { highlight_style: "dracula", theme: "league" };
 
   // ns-hugo:/Users/fudongwang/Desktop/MyMathBlog/MyBlog/myblog/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5/assets/js/wowchemy-utils.js
   function fixMermaid(render = false) {

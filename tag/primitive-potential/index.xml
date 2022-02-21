@@ -55,14 +55,14 @@ m=I+CTm,
 $$
 where $Cf=(\frac{1}{\pi z}*f)(z)$ and $Tf=fv$. (Note: this Cauchy operator is with respect to area measure.)&lt;/p&gt;
 &lt;p&gt;Now let&amp;rsquo;s compute $D_zm$. In fact, we have
-\begin{align}
+\begin{align*}
 D_zm &amp;amp; =D_z(1-CT)^{-1}I\\
 &amp;amp;=[D_z,(1-CT)^{-1}]I\quad (\text{using the fact that $D_zI=0$})\\
 &amp;amp;=(1-CT)^{-1}[D_z,CT]m\quad (\text{since $(1-b) [a,(1-b)^{-1}] (1-b)=[a,b]$ })\\
 &amp;amp;=(1-CT)^{-1}[D_z,C]Tm\quad (\text{since $[D_z,T]=0$})\\
 &amp;amp;=(1-CT)^{-1}[z,C]\hat J Tm\\
 &amp;amp;=( [z,C] \hat J Tm)m \quad (\text{using the magic property of the operator $ [z,C] $}).
-\end{align}
+\end{align*}
 From the last step, we see if we set $q=[z,C] \hat J Tm$, we recovery the potential from the scattering data $v$.&lt;/p&gt;
 &lt;p&gt;To get a hierarchy of integrable system then is trivial. We will skip it here.&lt;/p&gt;
 &lt;h3 id=&#34;zahkarov-manakovs-dressing-method&#34;&gt;Zahkarov-Manakov&amp;rsquo;s dressing method&lt;/h3&gt;

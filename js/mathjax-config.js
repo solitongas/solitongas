@@ -14,10 +14,17 @@ window.MathJax = {
       ['$$', '$$'],
       ['\\[', '\\]'],
     ],
-    processEscapes: false,
+    processEscapes: true,
     packages: {'[+]': ['noerrors']},
   },
+
+  
   loader: {
     load: ['[tex]/noerrors'],
+    
   },
+  
 };
+
+
+

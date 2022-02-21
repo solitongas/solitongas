@@ -20,12 +20,21 @@
       <description>&lt;p&gt;We are going to learn the following fudamental concepts:
 &lt;strong&gt;vector space, subspace, bases, linear dependent, dimension.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;lecture-notes&#34;&gt;Lecture Notes&lt;/h2&gt;
+&lt;ul class=&#34;cta-group&#34;&gt;
+  
+  &lt;li&gt;
+    &lt;a href=&#34;https://solitongas.github.io/slides/vector-space&#34;  class=&#34;btn btn-primary px-3 py-3&#34;&gt;Lecture slides&lt;/a&gt;
+  &lt;/li&gt;
+  
+  
+&lt;/ul&gt;
+
 &lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-0&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
   &lt;summary&gt;What is the definition of subspaces?&lt;/summary&gt;
   &lt;p&gt;Subspace = subset + space!&lt;/p&gt;
 &lt;/details&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;What is the meaning of dimension?&lt;/summary&gt;
   &lt;p&gt;Number vectors in a basis.&lt;/p&gt;
 &lt;/details&gt;</description>
