@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>isomorphic | Soliton Gases</title>
+    <link>https://solitongas.github.io/tag/isomorphic/</link>
+      <atom:link href="https://solitongas.github.io/tag/isomorphic/index.xml" rel="self" type="application/rss+xml" />
+    <description>isomorphic</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_512x512_fill_lanczos_center_3.png</url>
+      <title>isomorphic</title>
+      <link>https://solitongas.github.io/tag/isomorphic/</link>
+    </image>
+    
+    <item>
+      <title>Linear Transformations</title>
+      <link>https://solitongas.github.io/slides/linear-transformation/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/slides/linear-transformation/</guid>
+      <description>&lt;img src=&#34;https://solitongas.github.io/la/01.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/02.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/03.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/04.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;thanks-&#34;&gt;Thanks ~&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Transformations</title>
+      <link>https://solitongas.github.io/slides/vector-space/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/slides/vector-space/</guid>
+      <description>&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-1.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-2.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-3.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-4.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-5.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-6.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-10_20_57-7.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-12_20_51-1.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-12_20_51-2.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-12_20_51-3.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-12_20_51-4.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/notes_2022-01-12_20_51-5.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/02.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/03.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;https://solitongas.github.io/la/04.jpg&#34;  height=&#34;650&#34; width=&#34;550&#34;&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;thanks-&#34;&gt;Thanks ~&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

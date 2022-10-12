@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>polynomial | Soliton Gases</title>
+    <link>https://solitongas.github.io/tag/polynomial/</link>
+      <atom:link href="https://solitongas.github.io/tag/polynomial/index.xml" rel="self" type="application/rss+xml" />
+    <description>polynomial</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Tue, 15 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_512x512_fill_lanczos_center_3.png</url>
+      <title>polynomial</title>
+      <link>https://solitongas.github.io/tag/polynomial/</link>
+    </image>
+    
+    <item>
+      <title>Rogue wave solutions to the complex KdV using Adler-Moser polynomials</title>
+      <link>https://solitongas.github.io/post/kdvrationalsolution/</link>
+      <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/post/kdvrationalsolution/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Rogue wave solutions are known to have many applications in nonlinear wave science. Mathematically, such a solution can be defined as a rational solution which is localized in space and time. In the $1+1$ dimension case, the real-valued Korteweg-de Vries (KdV) equation is a common model to describe physical phenomena in different fields. The pure real-valued KdV equation is believed to lack of rogue wave solutions. However, until very recently, the rogue wave solution for the complex-valued KdV equation is constructed in \cite{PhysRevE.99.050201}. And later, the authors of \cite{crabb2020rogue} study the variety of those parameters for constructing rogue wave solutions for complex KdV. A crucial step in \cite{crabb2020rogue} is considering a linear superposition of the first tau function and the third tau function of the KdV equation. Moreover, they conjectured that the linear combination $\tau_{n}+g\tau_{n-2}$ is again a tau function to the same KdV equation.Recently, in the publication of \cite{MA2021100023}, the author also conjectured some properties of the tau function. In the current paper, we will prove the conjecture of \cite{crabb2020rogue} and partially prove some property conjectured in \cite{MA2021100023} by applying the Adler-Moser polynomial\cite{adler1978}.  Moreover, we will extensively study several families of third-order rogue wave solutions and establish some necessary and sufficient conditions for those rouge waves being non-singular.&lt;/p&gt;
+&lt;p&gt;Consider the complex KdV equation
+\begin{align}
+u_t-6u(z,t)u_z+u_{zzz}=0,
+\label{eq: complex KdV}
+\end{align}
+where $z\in \mathbb C$ and $u\in \mathbb C$. The corresponding bilinear form reads
+\begin{align}
+\label{eq: bilinear kdv}
+P(z,t)[f]:= (D_zD_t+D_z^4)f\cdot f=0,
+\end{align}
+where $D$ is the Hirota derivative.&lt;/p&gt;
+&lt;p&gt;Following a theorem in \cite{MaYou2005}, given a group of spectral data ${\Phi,\Lambda}$ of the following system of PDEs:
+\begin{align}
+-\Phi_{zz}&amp;amp;=\Lambda \Phi,\
+\Phi_t&amp;amp;=-4\Phi_{zzz},
+\end{align}
+where $\Lambda=(\lambda_{i,j})_{i,j=0}^n$ and $\Phi=(\phi_1(z,t),\cdots,\phi_n(z,t))^T$. The solution to the bilinear KdV \eqref{eq: bilinear kdv} is the Wronskian determinant of $\Phi$.&lt;/p&gt;
+&lt;p&gt;%&lt;br&gt;
+It is easy to check that for any $c\neq 0$,
+\begin{align}
+P(z,t)[\tau_{n}+c\tau_{n-2}]=cP(z,t)[\tau_{n}+\tau_{n-2}].
+\end{align}
+Hence, to show the conjecture, it is sufficient to show that
+\begin{align}
+P(z,t)[\tau_{n}+c^&lt;em&gt;\tau_{n-2}]=0
+\end{align}
+is true for one nonzero constant $c^&lt;/em&gt;$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Theorem:&lt;/strong&gt;
+Linear combination of $\tau_n$ and $\tau_{n-2}$ is again a tau function for the complex KdV equation \eqref{eq: complex KdV}.&lt;/p&gt;
+&lt;p&gt;\section{Proof}
+We begin with a theorem of sufficient conditions for a determinant being a solution to the bilinear KdV equation \eqref{eq: bilinear kdv}.
+\begin{theorem}(\cite{MaYou2005}, theorem 2.1)
+\label{thm: Ma You 2005}
+Let ${\phi_j(z,t)}&lt;em&gt;{j=1}^n$ be a sequence of functions, analytic in $z$ and smooth in $t$, satisfying
+\begin{align}
+-\phi&lt;/em&gt;{i,zz}&amp;amp;=\sum_{j=1}^n\lambda_{ij}(t)\phi_j,,, 1\leq i\leq n,\
+\phi_{i,t}&amp;amp;=-4\phi_{i,zzz}+\xi(t)\phi_i,
+\end{align}
+where $\lambda_{ij}$ and $\xi(t)$ are smooth real functions of $t$. Then the Wronskian determinant $W_n:=W(\phi_1,\cdots,\phi_n)$ solves the bilinear KdV \eqref{eq: bilinear kdv}.
+\end{theorem}
+There is an immediate corollary which plays a fundamental role in the current paper to construct rational solutions for the complex KdV.
+\begin{cor}
+Suppose a sequence of functions ${\phi_j(z,t)}&lt;em&gt;{j=1}^n$ satisfying the following conditions
+\begin{align}
+\phi&lt;/em&gt;{1}&amp;amp;=z,\
+\phi_{i+1,zz}&amp;amp;=\phi_i,\
+\phi_{i,t}&amp;amp;=-\phi_{i,zzz},,, i=1,&amp;hellip;,n-1.
+\end{align}
+Then the corresponding Wronskian determinant $W_n$ solves the bilinear KdV \eqref{eq: bilinear kdv}.
+\label{corollary}
+\end{cor}
+\begin{proof}
+It is easy to check that the sequence in the corollary satisfies the theorem \eqref{thm: Ma You 2005} by taking $\xi=0$ and $\lambda_{ij}=-\delta_{i,j-1}$.
+\end{proof}
+Thus, the Wronskian determinant is actually the tau function of the KdV equation, as convention, denoted by $\tau_n=W_n:=W(\phi_1,&amp;hellip;,\phi_n)$.&lt;/p&gt;
+&lt;p&gt;\begin{lemma}
+The tau functions satisfy
+\begin{align}
+\tau_{n+1}&#39;\tau_{n-1}-\tau_{n+1}\tau_{n-1}&#39;=\tau_{n}^2.
+\end{align}
+where prime means derivative with respect to $x$.
+\end{lemma}
+\begin{proof}
+See \cite{adler1978}.
+\end{proof}
+Define the $\phi_j$ by the generating function
+\begin{align}
+\sum_{j=1}^\infty\phi_j s^{2j-1}=\sinh(sz)+\cosh{(sz)}\sum_{i=2}^\infty\rho_j s^{2i-1},
+\end{align}
+where the parameters $\rho_j$ are arbitrary.
+Then it is evident that the $\phi_j$ satisfy the recursion relation:
+\begin{align}
+\phi_j&#39;&#39;=\phi_{j-1},j=2,3,\cdots.
+\label{eq: z derivative}
+\end{align}
+If we set $\phi_1=z$, then all the $\phi_j$ are polynomials of $z$, in fact,
+from the generating function, one get
+\begin{align}
+\phi_j=\frac{z^{2j-1}}{(2j-1)!}+\sum_{i=0}^{j-2}\rho_{j-i}\frac{z^{2i}}{(2i)!}.
+\end{align}
+Denote $\mathring{\phi}&lt;em&gt;j=\phi_j|&lt;/em&gt;{\rho_j=0}$, similarly, $\mathring{\tau}&lt;em&gt;j=\tau_j|&lt;/em&gt;{\rho_j=0}$.&lt;/p&gt;
+&lt;p&gt;In addition to the equation \eqref{eq: z derivative}, we add time evolution conditions to the sequence ${\phi_j}$:
+\begin{align}
+\label{eq: time evolution}
+\phi_{j,t}=-4\phi_{j,zzz},
+\end{align}
+which leads to
+\begin{align}
+\dot{\rho_2}&amp;amp;=-4\
+\dot{\rho_j}&amp;amp;=0,j\geq 3.
+\end{align}&lt;/p&gt;
+&lt;p&gt;Then if we choose $\rho_2=-4t$ and the  $\rho_j$ are constants for $j\geq 3$. Such sequence of functions will satisfy all conditions of Corollary \ref{corollary}.&lt;/p&gt;
+&lt;p&gt;\begin{prop}
+\label{prop: main prop}
+For $n\geq 3$,
+\begin{align}
+\tau_n=\mathring{\tau}&lt;em&gt;{n}+(-1)^{n+1}\rho_n\tau&lt;/em&gt;{n-2}
+\end{align}
+\end{prop}
+\begin{proof}
+Denote $W_n(1)=W(\phi_1,&amp;hellip;,\phi_n,1)$, then  it is evident that
+\begin{align}
+W_n(1)=(-1)^nW_{n-1}.
+\end{align}
+Then
+\begin{align*}
+\tau_n&amp;amp;=W(\phi_1,&amp;hellip;,\phi_n)\
+&amp;amp;=W(\phi_1,&amp;hellip;,\mathring{\phi}&lt;em&gt;n+\rho_n)\
+&amp;amp;=\mathring{\tau}&lt;em&gt;n+\rho_nW(\phi_1,&amp;hellip;,\phi&lt;/em&gt;{n-1},1)\
+&amp;amp;\text{note: $\phi_1=x$ and $\phi&lt;/em&gt;{i+1,xx}=\phi_{i}$,}\
+&amp;amp;=\mathring{\tau}&lt;em&gt;n+(-1)^{n+1}W(\phi_2^{(2)},&amp;hellip;,\phi&lt;/em&gt;{n-1}^{(2)})\
+&amp;amp;=\mathring{\tau}&lt;em&gt;n+(-1)^{n+1}\rho_nW(\phi_1,&amp;hellip;,\phi&lt;/em&gt;{n-2})\
+&amp;amp;=\mathring{\tau}&lt;em&gt;{n}+(-1)^{n+1}\rho_n\tau&lt;/em&gt;{n-2}
+\end{align*}
+\end{proof}&lt;/p&gt;
+&lt;p&gt;From the Proposition \ref{prop: main prop}, and the fact that $\rho_j,j=3,&amp;hellip;,n$ are arbitrary constants, we conclude that $\tau_n+\tau_{n-2}$ is again a tau function to the complex KdV, since $\mathring{\tau}_n$ is a tau function to the complex KdV equation. This proves the main theorem.&lt;/p&gt;
+&lt;p&gt;\begin{remark}
+The time evolution in the current article seems too trivial. This is due to the choice of the generating function. One can generalize the method by defining
+\begin{align}
+\sum_{j=1}^\infty\phi_j s^{2j-1}=\sinh(sz)+\cosh{(sz)}g\left(\sum_{i=2}^\infty\rho_j s^{2i-1}\right),
+\end{align}
+where $g$ is some analytic function. For instance, in the paper \cite{devilleneuve2019adlermoser}, they take $g=\tanh(x)$ .
+\end{remark}
+\begin{remark}
+The above proof mainly based on the original work in \cite{adler1978}.
+\end{remark}&lt;/p&gt;
+&lt;p&gt;\section{Rogue Wave solutions}
+Here, we will follow the ideas from \cite{crabb2020rogue}. Note that the complex KdV shares the following invariant property:
+\begin{prope}
+If $u(z,t)$ is a solution, so is $u(z+z_0,t+t_0)$, where $z_0,t_0$ are arbitrary complex numbers.
+\end{prope}&lt;/p&gt;
+&lt;p&gt;Then from the previous analysis, the $n^{th}$ order rogue solution reads
+\begin{align}
+u_n(z,t)=-2\partial_z^2\log{\tau_n(z,t)}.
+\end{align}&lt;/p&gt;
+&lt;p&gt;From the definition of the tau function, we know there are $n-2$ free parameters $\rho_j,j=3,\cdots,n$. By taking $\rho_j=0,j\geq 3$, we can recover the solutions in \cite{crabb2020rogue}. Also, due to the invariant property, the $n^{th}$ order rogue wave solution can actually have $n$ free parameters. Therefore, we have the following general representation:
+\begin{align}
+u^\sharp_n(z,t)=u_n(z+z_0,t+t_0),z_0,t_0\in \mathbb C.
+\end{align}
+Moreover, due to the main theorem, it seems that we may add one more complex parameter, thus, we arrive at
+\begin{align}
+\Tilde{u}(z,t)=-2\partial_z^2\log{\left{\tau_n(z+z_0,t+t_0)+g\tau_{n-2}(z+z_0,t+t_0)\right}}.
+\end{align}
+However, from the proof of the main theorem, we realize that $\rho_n$ plays the role of $g$. This implies that the constructing in the current paper can just introduce $n$ parameters, i.e., ${t_0,z_0,\rho_3,\cdots,\rho_n}$. So it is not surprise that
+the second order rogue wave solutions  coincides with those constructed in \cite{crabb2020rogue}. We will omit this case. For the third-order rogue wave solution, our construction is also equivalent with \cite{crabb2020rogue}. In fact, when $n=3$, we have
+\begin{align}
+\tau_3+g\tau_1&amp;amp;=\frac{1}{45}z^6+\frac{4}{3}tz^3-16t^2+(\rho_3+g)z,\
+&amp;amp;=\frac{1}{45}z^6+\frac{4}{3}tz^3-16t^2+\rho_3&amp;rsquo;z,
+\end{align}
+which indicates that $g$ can be absorbed by $\rho_3$. Then the potential reads
+\begin{align}
+u_3(z,t)&amp;amp;=\frac{12z^{10}+64800t^2z^2-1620\rho_3z^5+518400t^3z+4050\rho_3^2}{(-z^6-60tz^3+720t^2-45\rho_3z)^2},\
+\Tilde{u}_3(z,t)&amp;amp;=u_3(z+z_0,t+t_0),,,z_0,t_0\in \mathbb C.
+\label{eq: general rogue wave solution}
+\end{align}
+By setting $z+z_0=x+iy$ where $x,y\in \R$ and $t\in \R$, we need to find the conditions in the parameters ${y,t_0,\rho_3}$ such that $u_3$ is real analytic in the real variables ${x,t}$. Denote $$K_3(x,t)=\frac{1}{45}(x+iy)^6+\frac{4}{3}(t+ic)(x+iy)^3-16(t+ic)^2+(a+ib)(x+iy),$$
+it is easy to see that when both $y,c$ equal zero, $K_3(0,0)=0$, that means the corresponding potential $u_3$ has a singularity at $(0,0)$. In what follows, we will discuss three cases: (i) $y=0,c\neq 0$, (ii)$y\neq0,c= 0$, (iii)$y\neq0,c\neq 0$.&lt;/p&gt;
+&lt;p&gt;\subsection*{\textbf{Case (i):} $y=0,c\neq 0$}
+\begin{prop}
+$K_3(x,t)$ is non-vanishing if and only if $b=0$ and
+$$\frac{48}{5}|c^{\frac{5}{3}}|&amp;gt;|a|.$$
+\end{prop}
+\begin{proof}
+Since $y=0$, we have
+\begin{align*}
+\Re{K_3}&amp;amp;=\frac{1}{45}x^6+\frac{4}{3}tx^3-16t^2+16c^2+ax\
+\Im{K_3}&amp;amp;=\frac{4}{3}cx^3-32ct+bx.
+\end{align*}
+The singularities appear when both equations vanish.
+We can easily solve both equation with respect to the variable $t$ and obtain that the singularities appear if and only if the following equation
+\begin{align}
+\frac{b^2x^2}{c^2}=\frac{144}{45}x^6+64ax+1024c^2
+\end{align}
+has real roots with respect to the variable $x$. If $b\neq 0$, then by a simple calculation, we see that there is always a real solution. Thus, we set $b=0$, and consider the intersection points of two functions $f_1=\frac{144}{45}x^6$ and $f_2=-64ax-1024c^2$. By checking the tangent lines, we conclude that if
+\begin{align*}
+\frac{48}{5}|c^{\frac{5}{3}}|=|a|,
+\end{align*}
+then $f_2$ is a tangent line to $f_1$. Since $f_1$ is growing to positive infinity, we conclude that $f_1$ and $f_2$ have no intersections if and only if
+$$\frac{48}{5}|c^{\frac{5}{3}}|&amp;gt;|a|.$$&lt;/p&gt;
+&lt;p&gt;\end{proof}&lt;/p&gt;
+&lt;p&gt;\subsection*{\textbf{Case(ii): $y\neq 0,c=0$}}
+\begin{prop}
+$K_3(x,t)$ never vanishes for real $x,t$.
+\end{prop}
+\begin{proof}
+Since $K_3$ is a quadratic equation in $t$, suppose there is a real root of $K_3(x,t)=0$, solve for $t$, we have
+\begin{align}
+t=\frac{(x+iy)^3}{24}\pm \frac{\sqrt{5(x+iy)^6+100(a+ib)(x+iy)}}{40},
+\end{align}
+Since $t\in \R$, $\Im{t}=0$. If we denote $S=\left(\frac{5}{3}\Im{(x+iy)^3}\right)^2$ and $A+iB=5(x+iy)^6+100(a+ib)(x+iy)$, then
+\begin{align}
+4S(1-S)=\frac{B^2}{A^2+B^2}.
+\end{align}
+Since the equation is true for arbitrary $x$, all coefficients of $x$ in the numerator vanishes, but this leads to $y=0$, a contradiction. Thus, there is no real roots of $K_3(x,t)=0$.
+\end{proof}
+\subsection*{\textbf{Case(iii):} $y\neq 0,,c\neq 0$}
+In this case, the condition becomes extreme complicated, it may involve some deep polynomial theory to handle it. We will state the condition as follows:
+\begin{prop}
+$K_{3}(x,t)$ never vanishes if and only if
+\begin{align*}
+&amp;amp;-81,{y}^{2}{x}^{10}+ \left( 135,{y}^{4}-1620,cy \right) {x}^{8}\
+&amp;amp;+\left( -522,{y}^{6}+8640,c{y}^{3}-1215,by+6480,{c}^{2} \right) {x
+}^{6}+810,a{x}^{5}{y}^{2}\
+&amp;amp;+ \left( 270,{y}^{8}-16200,c{y}^{5}+2025,
+b{y}^{3}+97200,{c}^{2}{y}^{2} \right) {x}^{4}+ \left( 2700,a{y}^{4}-
+32400,acy \right) {x}^{3}\
+&amp;amp;+ \left( -21,{y}^{10}+4320,c{y}^{7}+135,b
+{y}^{5}-32400,{c}^{2}{y}^{4}+32400,bc{y}^{2}-1036800,{c}^{3}y-2025
+,{b}^{2} \right) {x}^{2}\
+&amp;amp;+\left( -990,a{y}^{6}+10800,ac{y}^{3}-4050
+,bay+129600,a{c}^{2} \right) x\
+&amp;amp;-5,{y}^{12}+60,c{y}^{9}-225,b{y}^{7
+}+15120,{c}^{2}{y}^{6}-10800,bc{y}^{4}+345600,{c}^{3}{y}^{3}\
+&amp;amp;-2025,
+{a}^{2}{y}^{2}-129600,b{c}^{2}y+2073600,{c}^{4}&amp;lt;0
+\end{align*}
+for arbitrary real variable $x$.
+\end{prop}
+\begin{proof}
+The condition is immediately from solving the equation $K_3=0$. After eliminating the variable $t$, we will see exactly the conditions stated in the proposition.
+\end{proof}&lt;/p&gt;
+&lt;p&gt;For the practical purpose, we have an obvious necessary condition:
+\begin{align*}
+&amp;amp;-5,{y}^{12}+60,c{y}^{9}-225,b{y}^{7
+}+15120,{c}^{2}{y}^{6}-10800,bc{y}^{4}+345600,{c}^{3}{y}^{3}\
+&amp;amp;-2025,
+{a}^{2}{y}^{2}-129600,b{c}^{2}y+2073600,{c}^{4}&amp;lt;0
+\end{align*}
+\subsection*{\textbf{Examples of $3^{rd}$ order rogue wave solutions for case(iii)}}&lt;/p&gt;
+&lt;p&gt;Taking ${a,b,c,y}={2,-2.5,-1/4,-1/2}$, then the polynomial in the case (iii) is always negative, hence satisfies the conditions.&lt;/p&gt;
+&lt;p&gt;\begin{figure}[h]
+\centering
+\subfloat[Subfigure 1 list of figures text][Profile of function $|u_3(x,t)|$]{
+\includegraphics[width=0.4\textwidth]{case3example1.eps}
+\label{fig:subfig1}}
+\qquad
+\subfloat[Subfigure 2 list of figures text][Density of function $|u_3(x,t)|$]{
+\includegraphics[width=0.4\textwidth]{case3example1density.eps}
+\label{fig:subfig2}}
+\caption{An example of rogue wave solution with parameters:$a=2$,$b=-5/2$,$c=-1/4$, $y=-1/2$}
+\label{fig:globfig}
+\end{figure}
+In this case, the rogue wave solution reads
+\begin{align}
+u_3(x,t)=\frac{P}{Q^2},
+\end{align}
+where
+\begin{align*}
+P=&amp;amp;-4147200,x-552960,{x}^{8}-779673600,{t}^{2}+2123366400,{t}^{3}x\
+&amp;amp;-
+265420800,t{x}^{3}-13271040,{x}^{5}+33177600,{x}^{3}+49152,{x}^{10
+}\
+&amp;amp;+24721920,{x}^{4}+645120,{x}^{6}+4155840,{x}^{2}-398131200,{x}^{2
+}{t}^{2}-331776000,xt\
+&amp;amp;+265420800,{x}^{4}{t}^{2}-245760,i{x}^{9}+
+737280,i{x}^{7}+16201728,i{x}^{5}\
+&amp;amp;+33177600,i{x}^{4}-1061683200,i{t
+}^{3}-8248320,i{x}^{3}\
+&amp;amp;-16588800,i{x}^{2}+190771200,it+30066240,ix-
+530841600,i{t}^{2}{x}^{3}\
+&amp;amp;-132710400,it{x}^{4}-1459814400,i{t}^{2}x+
+199065600,it{x}^{2}-21254448-165473280,i
+\end{align*}
+and
+\begin{align*}
+Q=&amp;amp; 192,i{x}^{5}-64,{x}^{6}+5760,it{x}^{2}+800,i{x}^{3}\
+&amp;amp;-3840,
+t{x}^{3}+240,{x}^{4}-23520,it+6492,ix\
+&amp;amp;+46080,{t}^{2}+2880,xt+1380
+,{x}^{2}+601+2880,i-5760,x
+\end{align*}
+From Fig \eqref{fig:globfig}, we see this solution has a single peak with two tails, this can be considered as a collision of two soliton solutions, as also described in \cite{crabb2020rogue}. However, to get a compact formula for determining where the peak is seems impossible, since the rational function involved has order 10. In practice, to do that, one may use numerical methods to find the zeros of the derivative of that rational function $u_3(x,t)$. Some asymptotic methods may help to locate the zeros of $\partial_xu_3(x,t)$.&lt;/p&gt;
+&lt;p&gt;\section{Conclusion}
+In this article we applied the Adler-Moser polynomial to prove the conjecture stated in \cite{crabb2020rogue}, i.e., we have shown that the linear superposition of $\tau_n$ and $\tau_{n-2}$ is again a tau function to the KdV equation. In the case of third-order rogue wave solutions, the construction in \cite{crabb2020rogue}, which used the linear superposition of $W_1$ and $W_3$, is actually reduce to, in our setting, change the integral constant $\rho_3$. In Section 3, we carefully studied some sufficient and necessary conditions to guarantee the existence of rogue wave solutions for the complex KdV. Comparing with the rogue wave solution of the nonlinear Schr&amp;quot;ondinger (NLS) equation , the KdV rogue wave solution seems to enjoy less structures and the construction by Darboux transformation is harder than NLS equation case. In NLS equation case, the rogue wave solutions are automatically non-singular by the Darboux construction.&lt;/p&gt;
+&lt;p&gt;As we can tell, from Section 3, the analysis of the existence of rogue wave solution for KdV is extreme complicated, even for the lower degree situation. Since the research on the rogue wave solution for KdV is relatively new, there are many essential questions need to be answered. Namely, for higher order rogue waves, is there a general existence theorem? How to locate the peaks and count the number of peaks (or dominated peaks)?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>primitive potential | Soliton Gases</title>
+    <link>https://solitongas.github.io/tag/primitive-potential/</link>
+      <atom:link href="https://solitongas.github.io/tag/primitive-potential/index.xml" rel="self" type="application/rss+xml" />
+    <description>primitive potential</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Fudong Wang</copyright><lastBuildDate>Thu, 17 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://solitongas.github.io/media/icon_hu1f2b9bcf65bfef017f435644daefae85_7735_512x512_fill_lanczos_center_3.png</url>
+      <title>primitive potential</title>
+      <link>https://solitongas.github.io/tag/primitive-potential/</link>
+    </image>
+    
+    <item>
+      <title>A note on d-bar inverse scattering</title>
+      <link>https://solitongas.github.io/post/a-note-on-d-bar-inverse-scattering/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://solitongas.github.io/post/a-note-on-d-bar-inverse-scattering/</guid>
+      <description>&lt;h3 id=&#34;beals-coifmans-dbar-problem&#34;&gt;Beals-Coifman&amp;rsquo;s dbar problem&lt;/h3&gt;
+&lt;p&gt;In what follows, we simply copy the main results from &lt;a href=&#34;https://sci-hub.se/https://www.sciencedirect.com/science/article/abs/pii/0167278986901843?via%3Dihub&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Beals-Coifman-1986&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s consider a linear spectral problem:
+\begin{align}
+D_zm(z,x)\equiv (\partial_x+z\hat J)m=q(x)m,\label{spectral}
+\end{align}
+where $\hat J=[J,\cdot]$, $z$ is a spectral variable, $q(x)$ is an off-diagonal matrix with complex-valued function entries defined on whole real line[&lt;strong&gt;Q1: How to generalize it to periodic case?&lt;/strong&gt;], and $m$ is a matrix-valued function. In what follows, we also assume $q(x)$ vanishes as $x\rightarrow\infty$.&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s introduce so-called $\bar\partial$ operator. Given any function $f(z)\in C^1(z,\bar z)$, we have
+$$
+df=\partial fdz+\bar\partial fd\bar z,
+$$
+where, if $z=x+iy$, then
+\begin{align}
+\partial \equiv \frac{\partial}{\partial  z}=\frac{1}{2}(\partial_x-i\partial_y)  ,\\
+\bar\partial \equiv \frac{\partial}{\partial \bar z}=\frac{1}{2}(\partial_x+i\partial_y). \label{ss}
+\end{align}&lt;/p&gt;
+&lt;p&gt;Moreover, the dbar derivative \eqref{ss} makes sense for distributions too. From the Cauchy-Riemann equations, it is evident that dbar annihilate all holomorphic functions. Apply Green&amp;rsquo;s formula, one can easily show that $\frac{1}{\pi z}$ is a fundamental solution for $\bar \partial$. We also have that if $f$ is holomorphic off some &amp;ldquo;nice&amp;rdquo; simple oritented curve $\Sigma$, and the left/right boundary valued $f_\pm$ exist, then
+$$
+\bar\partial f=\frac{i}{2}(f_+-f_-).
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exercise:&lt;/strong&gt; Prove all the mentioned properties about dbar operator in the sense of distribution.&lt;/p&gt;
+&lt;p&gt;Back to the linear spectral problem, since $D_z$ is holomorphic with respect to $z$, $[D_z,\bar\partial]=0$. Thus, applying dbar derivative to \eqref{spectral}, we have
+$$
+D_z\bar\partial m=q\bar\partial m.
+$$&lt;/p&gt;
+&lt;p&gt;Since the system is of first order (derivative), two different solutions are connected by a constant matrix (in classical scattering theory, that is called scattering matrix.) With this intuition, one can show that
+$$
+\bar\partial m=mv,
+$$
+where $D_zv=0$.(Here $v=v(x,z)$!)&lt;/p&gt;
+&lt;p&gt;The above process can be considered as direct scattering, i.e. from potential $q$ to scattering data $v$.&lt;/p&gt;
+&lt;p&gt;Next, consider the inverse scattering problem. Suppose $m$ solves the dbar problem with some $v\in \text{Ker}(D_z)$, we now derive a formula to recovery the potential $q$ from the scattering data $v$.&lt;/p&gt;
+&lt;p&gt;Using the fundamental solution (w.r.t &lt;strong&gt;Lebesgue measure&lt;/strong&gt;) of dbar, we can transfer the dbar problem to an singular integral equation:
+$$
+m=I+CTm,
+$$
+where $Cf=(\frac{1}{\pi z}*f)(z)$ and $Tf=fv$. (Note: this Cauchy operator is with respect to area measure.)&lt;/p&gt;
+&lt;p&gt;Now let&amp;rsquo;s compute $D_zm$. In fact, we have
+\begin{align*}
+D_zm &amp;amp; =D_z(1-CT)^{-1}I\\
+&amp;amp;=[D_z,(1-CT)^{-1}]I\quad (\text{using the fact that $D_zI=0$})\\
+&amp;amp;=(1-CT)^{-1}[D_z,CT]m\quad (\text{since $(1-b) [a,(1-b)^{-1}] (1-b)=[a,b]$ })\\
+&amp;amp;=(1-CT)^{-1}[D_z,C]Tm\quad (\text{since $[D_z,T]=0$})\\
+&amp;amp;=(1-CT)^{-1}[z,C]\hat J Tm\\
+&amp;amp;=( [z,C] \hat J Tm)m \quad (\text{using the magic property of the operator $ [z,C] $}).
+\end{align*}
+From the last step, we see if we set $q=[z,C] \hat J Tm$, we recovery the potential from the scattering data $v$.&lt;/p&gt;
+&lt;p&gt;To get a hierarchy of integrable system then is trivial. We will skip it here.&lt;/p&gt;
+&lt;h3 id=&#34;zahkarov-manakovs-dressing-method&#34;&gt;Zahkarov-Manakov&amp;rsquo;s dressing method&lt;/h3&gt;
+&lt;p&gt;One should compare this method with Dyachenkoa-Zakharov-Zakharov&amp;rsquo;s paper on &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S0167278916301518#:~:text=To%20the%20best%20of%20our,a%20very%20dense%20soliton%20gas.&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;primitive potential technique&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In DZZ paper, they consider following scalar dbar problem:
+$$
+\bar \partial \chi=ie^{2ikx}T(k)\chi(-k),
+$$
+where $T(k)$ is a compactly supported distribution, so-called dressing function (following &lt;a href=&#34;http://zakharov75.itp.ac.ru/static/local/zve75/zakharov/1985/1985-06-art3A10.10072FBF01078388.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zakharov-Manakov-1985&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;(Intuitively, by put some symmetries on the dressing function, one can reduce from Beals-Coifman&amp;rsquo;s scheme to Zakharov-Manakov&amp;rsquo;s dressing method. &lt;strong&gt;Under construction&lt;/strong&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;application-more-details-coming-soonor-never&#34;&gt;Application (more details coming soon/or never)&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Primitive potential, see &lt;a href=&#34;https://arxiv.org/pdf/1907.05038.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zakharov-Zakharov&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Soliton gas w.r.t. a curve spectral data, see &lt;a href=&#34;https://arxiv.org/pdf/1910.05732.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tovbis-El&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Soliton gas w.r.t. a compact region spectral data, see &lt;a href=&#34;https://arxiv.org/pdf/2112.05985.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bertola-Grava-Orsatti&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
