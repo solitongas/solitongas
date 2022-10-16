@@ -89,7 +89,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="福东" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="LuckEast" type="application/atom+xml" />
 
 
 
@@ -116,7 +116,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="MathJax with Jekyll">
 <meta property="og:url" content="http://localhost:4000/opinion/2014/02/16/Mathjax-with-jekyll/">
-<meta property="og:site_name" content="福东">
+<meta property="og:site_name" content="LuckEast">
 <meta property="og:description" content="One of the rewards of switching my website to Jekyll is the ability to support MathJax, which means I can write LaTeX-like equations that get nicely displayed in a web browser, like this one \( \sqrt{\frac{n!}{k!(n-k)!}} \) or this one \( x^2 + y^2 = r^2 \). $h^3$">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="centered">
@@ -156,7 +156,7 @@
 
 
 
-  <title>MathJax with Jekyll | 福东</title>
+  <title>MathJax with Jekyll | LuckEast</title>
   
 
 
@@ -192,7 +192,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">福东</span>
+        <span class="site-title">LuckEast</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -231,12 +231,36 @@
         
         
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+        <li class="menu-item menu-item-talks">
+          <a href="/talks/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-recycle"></i> <br />
             
-            About
+            Talks
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-talks2">
+          <a href="/talks2/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-book"></i> <br />
+            
+            Publications
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-lectures">
+          <a href="/lectures/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-key"></i> <br />
+            
+            Lectures
           </a>
         </li>
       
@@ -248,7 +272,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Projects
           </a>
         </li>
       
@@ -261,18 +285,6 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             Tags
-          </a>
-        </li>
-      
-        
-        
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
           </a>
         </li>
       
@@ -344,11 +356,11 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Fudong Wang">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="assets/images/avatar.gif">
+      <meta itemprop="image" content="/assets/images/myself.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="福东">
+      <meta itemprop="name" content="LuckEast">
     </span>
 
     
@@ -677,11 +689,11 @@ MathJax.Hub.Config({
       <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/assets/images/avatar.gif"
+               src="/assets/images/myself.jpg"
                alt="Fudong Wang" />
           <p class="site-author-name" itemprop="name">Fudong Wang</p>
            
-              <p class="site-description motion-element" itemprop="description">Elegant theme for Jekyll.</p>
+              <p class="site-description motion-element" itemprop="description">Fudong's Personal Website.</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -809,6 +821,16 @@ MathJax.Hub.Config({
   </a>
 </div>
 
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
         
 

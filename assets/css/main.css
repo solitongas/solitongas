@@ -1,3 +1,13 @@
+cv { text-align: center; }
+
+.h1 { text-align: center; }
+
+.p { text-align: center; }
+
+.div { text-align: center; }
+
+.a { text-align: center; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
 html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
@@ -416,7 +426,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 
 .post-sticky-flag { display: inline-block; font-size: 16px; -ms-transform: rotate(30deg); -webkit-transform: rotate(30deg); -moz-transform: rotate(30deg); -ms-transform: rotate(30deg); -o-transform: rotate(30deg); transform: rotate(30deg); }
 
-.posts-expand { padding-top: 40px; }
+.posts-expand { padding-top: -10 px; }
 
 @media (max-width: 767px) { .posts-expand { margin: 0 20px; }
   .post-body pre { padding: 10px; }
@@ -558,7 +568,7 @@ pre .k, pre .kd, pre .kn, pre .kp, pre .kr, pre .kt, pre .javascript .function {
 .links-of-author { margin-top: 20px; }
 
 .links-of-author a { display: inline-block; vertical-align: middle; margin-right: 10px; margin-bottom: 10px; border-bottom-color: #555; font-size: 13px; }
-.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #570000; }
+.links-of-author a:before { display: inline-block; vertical-align: middle; margin-right: 3px; content: " "; width: 4px; height: 4px; border-radius: 50%; background: #00ebff; }
 
 .links-of-blogroll { font-size: 13px; }
 
